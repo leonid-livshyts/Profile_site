@@ -5,7 +5,7 @@ export const certificates = [
     title: 'IELTS',
     issuer: 'IELTS',
     result: 'Overall band 6.5 (CEFR B2)',
-    date: null,
+    date: '24 July 2026',
     image: null,
     link: null,
   },

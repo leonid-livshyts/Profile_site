@@ -18,7 +18,7 @@ export const profile = {
     { title: 'Databases', items: ['MySQL', 'PostgreSQL'] },
     { title: 'Microcontrollers', items: ['ESP32', 'ESP8266', 'Arduino UNO', 'Arduino Nano', 'RP2040', 'RP2350'] },
     { title: 'Protocols & APIs', items: ['SPI', 'I²C', 'I²S', 'HTTPS', 'Wi-Fi', 'Web APIs', 'Telegram bots'] },
-    { title: 'Hosting & fabrication', items: ['Cloudflare hosting', 'Laser cutting'] },
+    { title: 'Hosting & fabrication', items: ['Cloudflare hosting', 'Laser cutting', 'FreeCAD 3D modelling', '3D printing'] },
   ],
   spokenLanguages: [
     { name: 'Ukrainian', level: 'Native' },
