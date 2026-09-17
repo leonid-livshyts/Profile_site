@@ -1,0 +1,31 @@
+.site-footer {
+  margin-top: auto;
+  background: var(--black);
+  color: var(--white);
+  border-top: 4px solid var(--yellow);
+}
+
+.site-footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px 24px;
+  padding-block: 24px;
+}
+
+.site-footer__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-wrap: anywhere;
+}
+
+.site-footer__copy {
+  margin: 0;
+  color: var(--gray-200);
+  font-size: 0.9rem;
+}

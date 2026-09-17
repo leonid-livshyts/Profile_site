@@ -1,0 +1,19 @@
+.skip-link {
+  position: absolute;
+  left: 8px;
+  top: -100px;
+  z-index: 20;
+  padding: 8px 12px;
+  background: var(--yellow);
+  color: var(--black);
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  top: 8px;
+}
+
+.site-main {
+  flex: 1;
+  padding-block: 40px 64px;
+}
