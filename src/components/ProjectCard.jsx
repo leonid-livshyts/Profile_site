@@ -9,6 +9,13 @@ function ProjectCard({ project }) {
       <div className="project-card__body">
         <h2 className="project-card__title">{project.title}</h2>
         <p>{project.summary}</p>
+        {project.details.length > 0 && (
+          <ul className="project-card__details" aria-label="Details">
+            {project.details.map((detail) => (
+              <li key={detail}>{detail}</li>
+            ))}
+          </ul>
+        )}
         {project.tags.length > 0 && (
           <ul className="chips" aria-label="Tags">
             {project.tags.map((tag) => (
