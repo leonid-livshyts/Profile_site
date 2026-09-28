@@ -32,6 +32,15 @@
   margin: 0;
 }
 
+.project-card__details {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding-left: 20px;
+  font-size: 0.95rem;
+}
+
 .project-card__links {
   display: flex;
   flex-wrap: wrap;

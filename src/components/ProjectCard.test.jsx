@@ -9,6 +9,7 @@ const base = {
   tags: ['Web'],
   image: null,
   links: [],
+  details: [],
 }
 
 describe('ProjectCard', () => {
@@ -19,10 +20,18 @@ describe('ProjectCard', () => {
     expect(screen.getByText('Web')).toBeInTheDocument()
   })
 
-  it('hides image and links when absent', () => {
+  it('hides image, links and details when absent', () => {
     render(<ProjectCard project={base} />)
     expect(screen.queryByRole('img')).not.toBeInTheDocument()
     expect(screen.queryByRole('link')).not.toBeInTheDocument()
+    expect(screen.queryByRole('list', { name: 'Details' })).not.toBeInTheDocument()
+  })
+
+  it('renders details as a list', () => {
+    render(<ProjectCard project={{ ...base, details: ['First point.', 'Second point.'] }} />)
+    const list = screen.getByRole('list', { name: 'Details' })
+    expect(list.querySelectorAll('li')).toHaveLength(2)
+    expect(screen.getByText('Second point.')).toBeInTheDocument()
   })
 
   it('renders image and external links when present', () => {

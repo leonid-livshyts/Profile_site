@@ -40,6 +40,7 @@ describe('projects', () => {
       expect(Array.isArray(p.tags)).toBe(true)
       expect(isImage(p.image)).toBe(true)
       expect(p.links.every(isLink)).toBe(true)
+      expect(p.details.every((d) => typeof d === 'string' && d.trim() !== '')).toBe(true)
     })
   })
 })
